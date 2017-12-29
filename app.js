@@ -15,7 +15,7 @@ var flash = require('connect-flash');
 passport.use(new Strategy({
     consumerKey: 'd3QzJAzrCVLa9278MKt28wXWY',
     consumerSecret: 'eofczgltxAcUUEqkMKAnCnUuv79DcWwiSYqtDo7NJ55xgrtHEf',
-    callbackURL: 'https://freecodecamp-zhichengchen.c9users.io/auth/twitter/callback'
+    callbackURL: 'https://freecodecamp-dynamic-pinterest.herokuapp.com/auth/twitter/callback'
   },
   function(token, tokenSecret, profile, cb) {
     return cb(null, profile);
