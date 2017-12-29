@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  br
+  div.container
+    div.grid
+      each pin in pins
+        div.grid-item
+          img(src='#{pin.url}')
+          br
+          span= pin.title
+          br
+          a(href='/user/#{pin.username}') #{pin.username}

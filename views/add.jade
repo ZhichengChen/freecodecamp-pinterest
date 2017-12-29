@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  br
+  div.container
+    h1 添加图钉
+    form(method='post')
+      div.form-group
+        label(for='title') 标题
+        input.form-control#title(type='text' placeholder='输入标题' name='title')
+      div.form-group
+        label(for='url') 图片网址
+        input.form-control#url(type='url' placeholder='输入图片网址' name='url')
+      button.btn.btn-primary(type='submit') 添加
